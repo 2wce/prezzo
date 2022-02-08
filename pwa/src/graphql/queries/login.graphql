@@ -1,0 +1,8 @@
+query Login($input: LoginInput!) {
+  login(input: $input) {
+    jwt
+    user {
+      id
+    }
+  }
+}
